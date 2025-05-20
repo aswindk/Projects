@@ -112,7 +112,7 @@ The dashboard provides:
 
 ## 📜 License
 
-This project is licensed under the MIT License. See the [LICENSE](Projects/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
