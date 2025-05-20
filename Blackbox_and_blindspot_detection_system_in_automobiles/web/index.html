@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BLACKBOX DATA</title>
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <!-- Code for the first page -->
+  <div id="welcome-page" class="page active">
+    <h1>Welcome...!</h1>
+    <p id="description-text">This website offers a comprehensive dashboard for real-time vehicle monitoring and analysis. Make data-driven decisions to optimize performance, enhance safety, and predict potential issues......</p>
+    <p id="click-instruction">(Click anywhere to continue)</p>
+  </div>
+
+  <!-- Code for the second page -->
+  <div id="data-table-container" class="page">
+    <h1>BLACKBOX DATA</h1>
+    <table id="data-table">
+      <thead> <tr>
+          <th>Timestamp</th>
+          <th>Location</th>
+          <th>
+            Temperature (°C)
+            <label>
+              <input type="checkbox" id="temp-toggle">
+              To °F
+            </label>
+          </th>
+          <th>Humidity (%)</th>
+          <th>
+            Speed (m/s)
+            <label>
+              <input type="checkbox" id="speed-toggle">
+              To km/h
+            </label>
+          </th>
+          <th>Warnings</th>
+        </tr>
+      </thead>
+      <tbody> </tbody> 
+    </table>
+    <button onclick="topFunction()" id="scrollBtn">Top</button>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+  <script src="app.js"></script> 
+</body>
+</html>

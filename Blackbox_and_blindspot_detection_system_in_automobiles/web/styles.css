@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #f0f8ff, #e3f2fd);
+  overflow: hidden; /* Prevent scrolling on the body */
+}
+
+h1 {
+  text-align: center;
+  background-color: #151515cd;
+  color: #fff;
+}
+
+/* Code for the first page */
+#welcome-page {
+  color: white; /* Change this to any light color you prefer */
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('peakpx.jpg'); /* Add this line */
+  background-size: cover; /* Add this line */
+}
+
+#description-text, #click-instruction {
+  color: white; /* Change this to any light color you prefer */
+}
+
+#welcome-page.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#description-text {
+  font-size: 1.2em;
+  font-family: "Gill Sans", sans-serif;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  text-align: center;
+}
+
+#click-instruction {
+  color: gray;
+  font-size: 0.8em;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  text-align: center;
+}
+
+/* Code for the second page */
+#data-table-container {
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: auto; /* Enable scrolling on the second page */
+  height: 100vh; /* Set the height to the full viewport height */
+}
+
+#data-table-container.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#data-table th, #data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#data-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+#data-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: linear-gradient(to right, #4CAF50, #66bb6a);
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#data-table tr:hover td {
+  background-color: #ddd;
+}
+
+.warning-cell {
+  background: linear-gradient(to right, rgba(255,0,0,1), rgba(255,0,0,0.5), rgba(255,0,0,1));
+  color: white;
+}
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
