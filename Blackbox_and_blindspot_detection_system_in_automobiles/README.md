@@ -107,17 +107,6 @@ The dashboard provides:
 - Store data logs for retrospective trip analysis.
 - Expand to commercial fleet analytics and traffic pattern prediction.
 
----
-
-## 👨‍💻 Project Contributors
-
-- Vaibhav S (VML20EC051)  
-- Aswin Divakaran (VML20EC018)  
-- Sreejishnu PA (VML20EC049)  
-- Nibin BV (VML20EC038)
-
-**Guide:** Dr. Roshini TV  
-**Institution:** Vimal Jyothi Engineering College, APJ Abdul Kalam Technological University
 
 ---
 
