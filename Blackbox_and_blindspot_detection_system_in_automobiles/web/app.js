@@ -1,10 +1,10 @@
 var firebaseConfig = {
-  apiKey: "AIzaSyB83M6Vk2ZFoS9cqRYF6iA9Lop4eTZ-BNE",
+  apiKey: "APIkey",
   authDomain: "data-blackbox.firebaseapp.com",
   databaseURL: "https://data-blackbox-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "data-blackbox",
   storageBucket: "data-blackbox.appspot.com",
-  messagingSenderId: "602581936920",
+  messagingSenderId: "senderID",
   appId: "1:602581936920:web:c919cbdcf3ceeeb9cc0c6d"
 };
 
